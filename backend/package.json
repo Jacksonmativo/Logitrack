@@ -1,0 +1,37 @@
+{
+  "name": "logitrack-backend",
+  "version": "1.0.0",
+  "description": "LogiTrack Fleet Management System — REST API, GPS/MQTT ingestion pipeline, and alert engine",
+  "main": "server.js",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": "Jackson Mativo",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "migrate": "node db/migrate.js",
+    "seed": "node db/seed.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "socket.io": "^4.7.5",
+    "mqtt": "^5.10.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcrypt": "^5.1.1",
+    "joi": "^17.13.3",
+    "winston": "^3.14.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "pdfkit": "^0.15.0",
+    "exceljs": "^4.4.0",
+    "africastalking": "^0.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
